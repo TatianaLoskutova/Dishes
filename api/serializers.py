@@ -4,6 +4,8 @@ from food.models import Food, FoodCategory
 
 
 class FoodSerializer(serializers.ModelSerializer):
+    """Сериализатор блюд."""
+
     additional = serializers.SlugRelatedField(
         many=True, read_only=True, slug_field='internal_code',
         )
@@ -12,12 +14,14 @@ class FoodSerializer(serializers.ModelSerializer):
         model = Food
         fields = (
             'internal_code', 'code', 'name_ru', 'description_ru',
-            'description_en','description_ch', 'is_vegan',
+            'description_en', 'description_ch', 'is_vegan',
             'is_special', 'cost', 'additional',
             )
 
 
 class FoodListSerializer(serializers.ModelSerializer):
+    """Сериализатор категорий блюд."""
+
     foods = FoodSerializer(source='food', many=True, read_only=True)
 
     class Meta:

@@ -1,8 +1,11 @@
 from django.db import models
-from model_utils.models import TimeStampedModel
+
+from .model_utils import TimeStampedModel
 
 
 class FoodCategory(TimeStampedModel):
+    """Модель категорий блюд."""
+
     name_ru = models.CharField(
         verbose_name='Название на русском', max_length=255, unique=True,
         )
@@ -26,6 +29,8 @@ class FoodCategory(TimeStampedModel):
 
 
 class Food(TimeStampedModel):
+    """Модель блюд."""
+
     category = models.ForeignKey(
         FoodCategory, verbose_name='Раздел меню',
         related_name='food', on_delete=models.CASCADE,
