@@ -75,5 +75,47 @@
                "is_special":false,
                "cost":"123.00",
                "additional":[
+                  
+               ]
+            },
+            {
+               "internal_code":300,
+               "code":3,
+               "name_ru":"Спрайт",
+               "description_ru":"Спрайт",
+               "description_en":null,
+               "description_ch":null,
+               "is_vegan":false,
+               "is_special":false,
+               "cost":"123.00",
+               "additional":[
+                  
+               ]
+            },
+            {
+               "internal_code":400,
+               "code":4,
+               "name_ru":"Байкал",
+               "description_ru":"Байкал",
+               "description_en":null,
+               "description_ch":null,
+               "is_vegan":false,
+               "is_special":false,
+               "cost":"123.00",
+               "additional":[
+                  
+               ]
+            }
+         ]
+      },
+      {
+         "id":2,
+         "name_ru":"Выпечка",
+         "name_en":null,
+         "name_ch":null,
+         "order_id":20,
+         "foods":[...]
+      },
+      {...},
       {...}
 ]
