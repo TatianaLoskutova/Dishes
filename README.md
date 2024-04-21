@@ -11,7 +11,7 @@
 
 **1)** Клонировать репозиторий и перейти в него в командной строке:
 
-    git clone https://github.com/TatianaLoskutova/kittygram_final
+    https://github.com/TatianaLoskutova/Dishes
 
 **2)** Cоздать и активировать виртуальное окружение:
 
